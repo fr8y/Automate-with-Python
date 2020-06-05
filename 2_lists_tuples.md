@@ -34,12 +34,16 @@ for i in range(len(spam)):
 	print('Index ' + str(i) + ' in spam is: ' + spam[i]) 
 
 # can use in or not in to determine if a value is in or not in a list, will return a boolean 
-'felix' in spam #will return True
-5 not in spam #will return True
-'cow' in spam #will return False 
+'felix' in spam 
+# will return True
+5 not in spam 
+# will return True
+'cow' in spam 
+# will return False 
 
 # lists have index() method, will return index of value, will return valueError if value is not in list
-spam.index('felix') #will return 1
+spam.index('felix') 
+# will return 1
 
 # you can add items to a list with methods append() or insert()
 spam.append('bat')
@@ -92,8 +96,10 @@ A tuple is identical to a list except it uses () instead of []
 
 ```python
 # If you have only 1 value in a tuple you need a trailing comma 
-type(('hello',)) # will return <class 'tuple'>
-type(('hello')) # will return <class 'str'>
+type(('hello',)) 
+# will return <class 'tuple'>
+type(('hello')) 
+# will return <class 'str'>
 
 # you can convert lists to tuples & tuples to lists
 tuple(['some','list','to','convert'])
@@ -108,7 +114,7 @@ del cheese[2]
 
 for i in spam:
 	print(i)
-#will print
+# will print
 1
 2
 # del cheese[2] deleted value in same list referenced in spam. The variables hold a reference to the same list, not the list itself. 
